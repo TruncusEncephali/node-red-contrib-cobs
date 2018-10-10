@@ -3,7 +3,7 @@ Consistent Overhead Byte Stuffing (COBS) algorithm for Node-RED
 
 The *node-red-contrib-cobs* module adds [Consistent Overhead Byte Stuffing] encoding and decoding support to [Node-RED].
 
-![screenshot](https://githib.com/TruncusEncephali/raw/master/screenshot.png)
+![screenshot](https://github.com/TruncusEncephali/node-red-contrib-cobs/raw/master/screenshot.png)
 
 ## Installation
 
