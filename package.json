@@ -1,0 +1,26 @@
+{
+    "name"         : "node-red-contrib-cobs",
+    "version"      : "0.0.1",
+    "description"  : "COBS decoding and encoding algorithm for Node-RED",
+    "homepage"     : "https://github.com/TruncusEncephali/node-red-contrib-cobs",
+    "license"      : "Apache-2.0",
+    "repository"   : {
+        "type": "git",
+        "url": "https://github.com/TruncusEncephali/node-red-contrib-cobs.git"
+    },
+    "contributors": [
+        {"name": "Phill Lemon", "url": "https://twitter.com/phill_lemon"},
+        {"name": "Truncus Encephali Ltd.", "url": "https://truncus-encephali.co.uk"}
+    ],
+    "keywords": [
+        "COBS", "Consistent Overhead Byte Stuffing", "Serial", "Node-red"
+    ],
+    "dependencies": {
+        "cobs": "0.2.1"
+    },
+    "node-red": {
+        "nodes": {
+            "cobs": "index.js"
+        }
+    }
+}
