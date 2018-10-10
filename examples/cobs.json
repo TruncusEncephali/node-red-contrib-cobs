@@ -1,0 +1,101 @@
+[
+    {
+        "id": "abb4a0e0.7e28f",
+        "type": "tab",
+        "label": "COBS Example",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5d631091.854ba",
+        "type": "cobs",
+        "z": "abb4a0e0.7e28f",
+        "name": "",
+        "mode": "encode",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "5a4c52c.ff946ac",
+                "8e919eb4.c55f8"
+            ]
+        ]
+    },
+    {
+        "id": "9b89995d.224fa8",
+        "type": "debug",
+        "z": "abb4a0e0.7e28f",
+        "name": "Decoded",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 680,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d5a783f3.92dd6",
+        "type": "inject",
+        "z": "abb4a0e0.7e28f",
+        "name": "",
+        "topic": "",
+        "payload": "[0,1,0,2,0,3,0,4,0,5]",
+        "payloadType": "bin",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "5d631091.854ba",
+                "f5f91239.7b02c"
+            ]
+        ]
+    },
+    {
+        "id": "5a4c52c.ff946ac",
+        "type": "cobs",
+        "z": "abb4a0e0.7e28f",
+        "name": "",
+        "mode": "decode",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "9b89995d.224fa8"
+            ]
+        ]
+    },
+    {
+        "id": "8e919eb4.c55f8",
+        "type": "debug",
+        "z": "abb4a0e0.7e28f",
+        "name": "Encoded",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 480,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f5f91239.7b02c",
+        "type": "debug",
+        "z": "abb4a0e0.7e28f",
+        "name": "Original",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 280,
+        "y": 220,
+        "wires": []
+    }
+]
